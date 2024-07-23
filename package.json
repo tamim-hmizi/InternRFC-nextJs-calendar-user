@@ -16,6 +16,7 @@
     "@fullcalendar/resource": "^6.1.14",
     "@fullcalendar/resource-timeline": "^6.1.14",
     "@fullcalendar/timegrid": "^6.1.14",
+    "aws-sdk": "^2.1659.0",
     "fullcalendar": "^6.1.14",
     "next": "14.2.4",
     "react": "^18",
