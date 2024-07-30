@@ -40,14 +40,15 @@ export default function Home() {
           <FullCalendar
             plugins={[
               dayGridPlugin,
-              interactionPlugin,
-              timeGridPlugin
+              //interactionPlugin,
+              //timeGridPlugin
             ]}
             initialView={"dayGridMonth"}
             headerToolbar={{
               start: "today prev,next",
               center: "title",
-              end: "dayGridMonth,timeGridWeek,timeGridDay",
+              end: "dayGridMonth",
+              //end: "dayGridMonth,timeGridWeek,timeGridDay",
             }}
             height={500}
             events={events}
