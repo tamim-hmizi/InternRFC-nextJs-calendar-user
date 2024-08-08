@@ -13,7 +13,7 @@ export default function Home() {
   useEffect(() => {
     const fetchEvents = async () => {
       try {
-        const response = await fetch('/api/calendar?personId=hmizitamim@hotmail.com');
+        const response = await fetch('/api/calendar?personId=salma.ksantini@esprit.tn');
         const data = await response.json();
         if (response.ok) {
           setEvents(data.events.map(event => ({

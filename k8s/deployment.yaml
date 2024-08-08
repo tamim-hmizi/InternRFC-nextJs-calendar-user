@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: calendar-user-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: InternRFC-app-calendar-user
+  template:
+    metadata:
+      labels:
+        app: InternRFC-app-calendar-user
+    spec:
+      containers:
+      - name: Calendar-uer-container
+        image: 533267283761.dkr.ecr.eu-central-1.amazonaws.com/worksession-user:latest
+        ports:
+        - containerPort: 3000
