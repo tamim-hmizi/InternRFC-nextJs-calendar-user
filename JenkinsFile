@@ -2,8 +2,8 @@ pipeline {
     agent any
 
     environment {
-        AWS_ACCESS_Key_ID = AKIAXYKJU74Y2V2CE2W4
-        AWS_SECRET_ACCESS_KEY = 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
+         AWS_ACCESS_KEY_ID = credentials('aws-access-key-id')
+        AWS_SECRET_ACCESS_KEY = credentials('aws-secret-access-key')
         AWS_REGION = 'eu-central-1'
         ECR_REPO = '533267283761.dkr.ecr.eu-central-1.amazonaws.com/worksession-user:latest'
         CLUSTER_NAME = 'InternRFC-cluster'
