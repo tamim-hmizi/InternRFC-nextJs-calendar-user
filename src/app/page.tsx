@@ -16,7 +16,7 @@ export default function Home() {
         const response = await fetch('/api/calendar?personId=salma.ksantini@esprit.tn');
         const data = await response.json();
         if (response.ok) {
-          setEvents(data.events.map(event => ({
+          setEvents(data.events.map((event: { title: string; start: string; end: string; description: string }) => ({
             title: event.title,
             start: event.start,
             end: event.end,
